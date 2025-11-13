@@ -1,0 +1,28 @@
+Run this commands on masterdb
+* How to create database ? 
+  CREATE database sqldemo
+* How to drop database ?
+  DROP database sqldemo
+* How to create table ? i have created employee table with 3 coloums
+  ---------> create table employee(empid int, empname nvarchar(60), empage int)
+  To check is table and coloums are created are not
+  ----------> select * from employee
+* How to insert data into table ?
+  ----------> insert into employee values(101, 'Telugu', 34)
+  (or) insert into employee(empid, empname, empage) values (102, 'programmer', 30)
+  To check data is added are not
+  ----------> select * from employee
+* How to delete ?
+  -----------> drop table employee
+
+              Primary key & identity in SQL
+primary key constraint unique identifies each record in a table.
+primary key must contain UNIQUE values, and cannot contain NULL values.
+A table can have ONE primary key.
+-----> create table employee (empid int primary key, empname nvarchar(60), empage int)
+
+Identity allows a unique number to be generated automatically when a new record is inserted into a table.
+The starting value for IDENTITY is 1, and it will increment by 1 for each new record.
+Tip: To specify that the "empid" column should start at value 100 and increment by 5, change it to IDENTITY(100,5)
+------> create table employee (empid int primary key identity(100,5), empname nvarchar(60), empage int)
+

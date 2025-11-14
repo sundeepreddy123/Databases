@@ -26,3 +26,6 @@ The starting value for IDENTITY is 1, and it will increment by 1 for each new re
 Tip: To specify that the "empid" column should start at value 100 and increment by 5, change it to IDENTITY(100,5)
 ------> create table employee (empid int primary key identity(100,5), empname nvarchar(60), empage int)
 
+SQL select statement
+The SELECT statement is used to select data from a database table
+
